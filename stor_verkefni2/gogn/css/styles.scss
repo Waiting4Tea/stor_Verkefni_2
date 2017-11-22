@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+$max-width: 1200px;
+$gutter: 20px;
+
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  background-color: #333;
+}
+
+body { /* stylelint-disable-line */
+  margin: 0;
+}
+
+main { /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+hr { /* stylelint-disable-line */
+  width: 83%;
+}
+
+.videos {
+  display: flex;
+}
+
+.videos div {
+  margin-right: 50px;
+}
