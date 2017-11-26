@@ -1,4 +1,4 @@
-aldur(b) {
+function aldur(b) {
   var gamalt = new Date(b);
   var nuna = Date.now();
   var gamaltD = (new Date() - new Date(b)) / (1000 * 60 * 60 * 24);
