@@ -1,0 +1,26 @@
+{
+  "name": "gogn",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ../gogn/All_css/scss -o ../gogn/All_css/css",
+    "_comment": "node-sass -o ../gogn/All_css/css ../gogn/All_css/css/*.scss",
+    "lint": "stylelint ../gogn/All_css/css/*.scss scss/*.scss --syntax scss",
+    "babel": "babel All_javascript/** -d All_javascript/babel_javascript/",
+    "eslint": "eslint ../gogn/All_javascript/javascript/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-primer": "^2.1.0"
+  }
+}
