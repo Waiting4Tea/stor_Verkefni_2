@@ -1,0 +1,42 @@
+html {
+    /* stylelint-disable-line */
+    box-sizing: border-box;
+    background-color: #333; }
+body {
+    /* stylelint-disable-line */
+    margin: 0 auto; }
+
+
+.buttonbar {
+    display: flex;
+}
+
+.button {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    margin: 15px;
+    /* put the height and width of your image here */
+    height: 70px;
+    width: 70px;
+    border: none;
+}
+    .play {
+        background-image: url(../img/play.svg);
+    }
+    .fwd {
+        background-image: url(../img/next.svg);
+    }
+    .rew {
+        background-image: url(../img/back.svg);
+    }
+    .mute {
+        background-image: url(../img/mute.svg);
+    }
+    .fullscreen {
+        background-image: url(../img/fullscreen.svg);
+    }
+
+div span {
+    display: none;
+}
