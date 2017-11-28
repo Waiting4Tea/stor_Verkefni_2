@@ -1,14 +1,49 @@
 html {
     /* stylelint-disable-line */
     box-sizing: border-box;
-    background-color: #333; }
+    background-color: #333;
+}
 body {
     /* stylelint-disable-line */
-    margin: 0 auto; }
+    margin: 0;
+}
 
+main {
+    /* stylelint-disable-line */
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+.bunny {
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 90%;
+    z-index: 99;
+}
+
+.ovplay {
+    display: none;
+    position:fixed;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    border: none;
+    z-index: 999;
+    top: 35%;
+    left: 47%;
+
+}
 
 .buttonbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
@@ -16,10 +51,10 @@ body {
     background-position: 50% 50%;
     background-size: contain;
     margin: 15px;
-    /* put the height and width of your image here */
     height: 70px;
     width: 70px;
     border: none;
+    cursor: pointer;
 }
     .play {
         background-image: url(../img/play.svg);
