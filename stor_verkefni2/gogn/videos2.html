@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/video_styles.css" media="all">
+</head>
+<body>
+    <main>
+        <h1>Lego!</h1>
+        <script src="video_scripts.js"></script>
+        <video class="bunny" id="Video1" poster="videos/small.png" >
+            <source src="videos/small.mp4" type="video/mp4" />
+        </video>
+
+        <div class="ovplay" id="ovplay" onclick="vidplay()"><span>ovplay</span></div>
+
+        <div class="buttonbar" id="buttonbar">
+            <div class="button rew" id="rew" onclick="skip(-3)"><span>rwd</span></div>
+            <div class="button play" id="play" onclick="vidplay()"><span>play</span></div>
+            <div class="button mute" id="mute" onclick="vidmute()"><span>mute</span></div>
+            <div class="button fullscreen" id="fullscreen" onclick="vidfullscreen()"><span>fullscreen</span></div>
+            <div class="button fwd" id="fastFwd" onclick="skip(3)"><span>fwd</span></div>
+        </div>
+    </main>
+</body>
+<footer><a href="index.html">Til baka</a></footer>
+</html>
