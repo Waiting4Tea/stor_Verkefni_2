@@ -6,18 +6,21 @@
     <link rel="stylesheet" href="css/video_styles.css" media="all">
 </head>
 <body>
-    <script src="video_scripts.js"></script>
-    <video id="Video1" >
-         <source src="videos/bunny.mp4" type="video/mp4" />
-    </video>
+    <main>
+        <script src="video_scripts.js"></script>
+        <video class="bunny" id="Video1" poster="videos/bunny.png" >
+            <source src="videos/bunny.mp4" type="video/mp4" />
+        </video>
 
-    <div class="buttonbar" id="buttonbar">
-        <div class="button stop" id="stop" onclick="restart();"><span>stop</span></div>
-        <div class="button rew" id="rew" onclick="skip(-3)"><span>rwd</span></div>
-        <div class="button play" id="play" onclick="vidplay()"><span>play</span></div>
-        <div class="button mute" id="mute" onclick="vidmute()"><span>mute</span></div>
-        <div class="button fullscreen" id="fullscreen" onclick="vidfullscreen()"><span>fullscreen</span></div>
-        <div class="button fwd" id="fastFwd" onclick="skip(3)"><span>fwd</span></div>
-    </div>
+        <div class="ovplay" id="ovplay" onclick="vidplay()"><span>ovplay</span></div>
+
+        <div class="buttonbar" id="buttonbar">
+            <div class="button rew" id="rew" onclick="skip(-3)"><span>rwd</span></div>
+            <div class="button play" id="play" onclick="vidplay()"><span>play</span></div>
+            <div class="button mute" id="mute" onclick="vidmute()"><span>mute</span></div>
+            <div class="button fullscreen" id="fullscreen" onclick="vidfullscreen()"><span>fullscreen</span></div>
+            <div class="button fwd" id="fastFwd" onclick="skip(3)"><span>fwd</span></div>
+        </div>
+    </main>
 </body>
 </html>
