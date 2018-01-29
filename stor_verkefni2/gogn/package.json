@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -o css css/*.scss",
-    "lint": "stylelint css/*.scss scss/*.scss --syntax scss"
+    "lint": "stylelint css/*.scss scss/*.scss --syntax scss",
+    "browser-sync": "browser-sync start --server --files index.html styles.css *.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +15,9 @@
     "node-sass": "^4.5.3"
   },
   "devDependencies": {
+    "browser-sync": "2.18.13",
     "stylelint": "^8.2.0",
-    "stylelint-config-primer": "^2.1.0"
+    "stylelint-config-primer": "^2.1.0",
+    "npm-run-all": "4.1.1"
   }
 }
